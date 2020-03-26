@@ -1,0 +1,16 @@
+server:
+  port: 7777
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/sunjian2?&useSSL=false&serverTimezone=UTC
+
+
