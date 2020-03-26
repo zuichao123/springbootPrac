@@ -6,6 +6,10 @@
     <title>Title</title>
 </head>
 <body>
-Hello World!
+    <p>Hello World!</p>
+    <p th:if="${num >= 30}">中年</p>
+    <p th:if="${num < 30 && num > 18}">青年</p>
+    <p th:if="${num < 18 && num >= 12}">少年</p>
+    <p th:if="${num < 12}">儿童</p>
 </body>
 </html>
