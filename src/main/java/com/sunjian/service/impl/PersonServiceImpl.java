@@ -1,7 +1,8 @@
 package com.sunjian.service.impl;
 
-import com.sunjian.dao.UserDao;
+import com.sunjian.dao.PersonDao;
 import com.sunjian.entity.Person;
+import com.sunjian.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,11 +11,11 @@ import org.springframework.stereotype.Service;
  * @date 2020/3/24 23:30
  */
 @Service
-public class PersonServiceImpl {
+public class PersonServiceImpl implements PersonService {
     @Autowired
-    private UserDao userDao;
+    private PersonDao personDao;
 
     public Person findById(Integer id){
-        return userDao.findById(id);
+        return personDao.findById(id);
     }
 }
